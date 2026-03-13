@@ -209,7 +209,7 @@ func filterVisible(entries []os.DirEntry) []os.DirEntry {
 func countFiles(root string) (map[string]int, int) {
 	counts := make(map[string]int)
 	total := 0
-	_ = filepath.WalkDir(root, func(path string, d os.DirEntry, err error) error {
+	_ = filepath.WalkDir(root, func(_ string, d os.DirEntry, err error) error {
 		if err != nil {
 			return nil
 		}
