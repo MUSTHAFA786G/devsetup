@@ -1,0 +1,9 @@
+devsetup
+devsetup.exe
+dist/
+coverage.out
+coverage.html
+.DS_Store
+*.swp
+go.work
+go.work.sum

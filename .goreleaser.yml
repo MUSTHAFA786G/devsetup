@@ -1,0 +1,34 @@
+version: 1
+
+builds:
+  - id: devsetup
+    main: .
+    binary: devsetup
+    env: [CGO_ENABLED=0]
+    goos: [linux, windows, darwin]
+    goarch: [amd64, arm64]
+    ignore:
+      - goos: windows
+        goarch: arm64
+    ldflags:
+      - -s -w
+      - -X 'github.com/devsetup/devsetup/cmd/devsetup.Version={{.Version}}'
+      - -X 'github.com/devsetup/devsetup/cmd/devsetup.BuildDate={{.Date}}'
+      - -X 'github.com/devsetup/devsetup/cmd/devsetup.CommitSHA={{.ShortCommit}}'
+
+archives:
+  - name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_
+      {{- if eq .Os "darwin" }}macOS{{- else }}{{ title .Os }}{{ end }}_
+      {{- if eq .Arch "amd64" }}x86_64{{ else }}{{ .Arch }}{{ end }}
+    format_overrides:
+      - goos: windows
+        format: zip
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
+  filters:
+    exclude: ["^docs:", "^test:", "^chore:", "Merge pull request", "Merge branch"]
