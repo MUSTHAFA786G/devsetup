@@ -24,7 +24,7 @@ jobs:
           cache: true
 
       - name: Build
-        run: go build -o devsetup ./cmd/devsetup
+        run: go build -o devsetup .
 
       - name: Run tests
         run: go test -v ./...
