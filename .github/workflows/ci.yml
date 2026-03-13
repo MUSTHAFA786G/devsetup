@@ -14,24 +14,33 @@ jobs:
       matrix:
         go: ["1.21", "1.22"]
         os: [ubuntu-latest, macos-latest, windows-latest]
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go }}
           cache: true
-      - run: go build -o devsetup .
-      - run: go test -v -race ./...
+
+      - name: Build
+        run: go build -o devsetup ./cmd/devsetup
+
+      - name: Run tests
+        run: go test -v ./...
 
   lint:
     name: Lint
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-go@v5
         with:
           go-version: "1.22"
           cache: true
+
       - uses: golangci/golangci-lint-action@v6
         with:
           version: latest
