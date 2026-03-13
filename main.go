@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/devsetup/devsetup/cmd/devsetup"
-)
+import "fmt"
 
 func main() {
-	devsetup.Execute()
+	fmt.Println("DevSetup CLI running...")
 }
