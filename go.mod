@@ -1,3 +1,3 @@
-module github.com/devsetup/devsetup
+module github.com/MUSTHAFA786G/devsetup
 
 go 1.21

@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/devsetup/devsetup/internal/analyzer"
-	"github.com/devsetup/devsetup/internal/detector"
-	"github.com/devsetup/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/internal/analyzer"
+	"github.com/MUSTHAFA786G/devsetup/internal/detector"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
 )
 
 func TestAnalyze_BasicReport(t *testing.T) {

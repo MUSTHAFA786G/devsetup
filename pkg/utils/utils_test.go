@@ -3,7 +3,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/devsetup/devsetup/pkg/utils"
+	"github.com/MUSTHAFA786G/devsetup/pkg/utils"
 )
 
 func TestCommandExists_GoPresent(t *testing.T) {

@@ -8,9 +8,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/devsetup/devsetup/internal/detector"
-	"github.com/devsetup/devsetup/internal/logger"
-	"github.com/devsetup/devsetup/pkg/utils"
+	"github.com/MUSTHAFA786G/devsetup/internal/detector"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/pkg/utils"
 )
 
 // Installer executes dependency installation for a given stack.

@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/devsetup/devsetup/internal/logger"
-	"github.com/devsetup/devsetup/pkg/utils"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/pkg/utils"
 )
 
 // Cloner clones a remote Git repository to a local path.

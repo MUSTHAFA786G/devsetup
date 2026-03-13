@@ -62,7 +62,7 @@ func (l *Logger) Banner() {
 	fmt.Fprintln(l.out, l.colorize(boldCyan, "  ║")+l.colorize(bold, "   ██████╔╝███████╗ ╚████╔╝ ███████║███████╗   ██║   ╚██████╔╝██║      ")+l.colorize(boldCyan, "║"))
 	fmt.Fprintln(l.out, l.colorize(boldCyan, "  ║")+l.colorize(faint, "   ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝      ")+l.colorize(boldCyan, "║"))
 	fmt.Fprintln(l.out, l.colorize(boldCyan, "  ╠══════════════════════════════════════════════════╣"))
-	fmt.Fprintf(l.out,  "  %s  Instant Dev Environment Setup  •  %s%s\n",
+	fmt.Fprintf(l.out, "  %s  Instant Dev Environment Setup  •  %s%s\n",
 		l.colorize(boldCyan, "║"),
 		l.colorize(faint, time.Now().Format("2006-01-02 15:04:05")),
 		l.colorize(boldCyan, "          ║"))

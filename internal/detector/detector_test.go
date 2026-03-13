@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/devsetup/devsetup/internal/detector"
-	"github.com/devsetup/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/internal/detector"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
 )
 
 func log() *logger.Logger { return logger.New(false) }

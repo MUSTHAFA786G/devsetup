@@ -12,9 +12,9 @@ builds:
         goarch: arm64
     ldflags:
       - -s -w
-      - -X 'github.com/devsetup/devsetup/cmd/devsetup.Version={{.Version}}'
-      - -X 'github.com/devsetup/devsetup/cmd/devsetup.BuildDate={{.Date}}'
-      - -X 'github.com/devsetup/devsetup/cmd/devsetup.CommitSHA={{.ShortCommit}}'
+      - -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.Version={{.Version}}'
+      - -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.BuildDate={{.Date}}'
+      - -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.CommitSHA={{.ShortCommit}}'
 
 archives:
   - name_template: >-

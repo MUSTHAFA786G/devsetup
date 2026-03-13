@@ -4,9 +4,9 @@ BUILD_DATE  := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || echo "unknow
 COMMIT_SHA  := $(shell git rev-parse --short HEAD 2>/dev/null || echo "unknown")
 
 LDFLAGS := -s -w \
-  -X 'github.com/devsetup/devsetup/cmd/devsetup.Version=$(VERSION)' \
-  -X 'github.com/devsetup/devsetup/cmd/devsetup.BuildDate=$(BUILD_DATE)' \
-  -X 'github.com/devsetup/devsetup/cmd/devsetup.CommitSHA=$(COMMIT_SHA)'
+  -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.Version=$(VERSION)' \
+  -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.BuildDate=$(BUILD_DATE)' \
+  -X 'github.com/MUSTHAFA786G/devsetup/cmd/devsetup.CommitSHA=$(COMMIT_SHA)'
 
 .PHONY: all build install test lint clean cross help
 

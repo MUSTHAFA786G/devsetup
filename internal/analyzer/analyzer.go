@@ -10,19 +10,19 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/devsetup/devsetup/internal/detector"
-	"github.com/devsetup/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/internal/detector"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
 )
 
 // Report is the result of analyzing a repository.
 type Report struct {
-	RepoName   string
-	RepoPath   string
-	Stack      *detector.Stack
-	Tree       []string          // Formatted tree lines
-	FileCounts map[string]int    // language → file count
-	EntryPoints []string         // Detected entry-point files
-	ConfigFiles []string         // Detected configuration files
+	RepoName    string
+	RepoPath    string
+	Stack       *detector.Stack
+	Tree        []string       // Formatted tree lines
+	FileCounts  map[string]int // language → file count
+	EntryPoints []string       // Detected entry-point files
+	ConfigFiles []string       // Detected configuration files
 	TotalFiles  int
 }
 
@@ -63,7 +63,7 @@ func (a *Analyzer) Display(r *Report) {
 
 	fmt.Println()
 	fmt.Println(c("\033[1;36m", "  ┌─────────────────────────────────────────────────┐"))
-	fmt.Printf(  "  │  📋  %-43s│\n", "Project Architecture: "+r.RepoName)
+	fmt.Printf("  │  📋  %-43s│\n", "Project Architecture: "+r.RepoName)
 	fmt.Println(c("\033[1;36m", "  └─────────────────────────────────────────────────┘"))
 	fmt.Println()
 

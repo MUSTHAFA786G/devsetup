@@ -2,9 +2,9 @@
 
 > **One command. Any GitHub repo. Running in minutes.**
 
-[![CI](https://github.com/devsetup/devsetup/actions/workflows/ci.yml/badge.svg)](https://github.com/devsetup/devsetup/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/devsetup/devsetup)](https://goreportcard.com/report/github.com/devsetup/devsetup)
-[![Release](https://img.shields.io/github/v/release/devsetup/devsetup)](https://github.com/devsetup/devsetup/releases)
+[![CI](https://github.com/MUSTHAFA786G/devsetup/actions/workflows/ci.yml/badge.svg)](https://github.com/MUSTHAFA786G/devsetup/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/MUSTHAFA786G/devsetup)](https://goreportcard.com/report/github.com/MUSTHAFA786G/devsetup)
+[![Release](https://img.shields.io/github/v/release/devsetup/devsetup)](https://github.com/MUSTHAFA786G/devsetup/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8.svg)](https://go.dev)
 
@@ -51,7 +51,7 @@ devsetup https://github.com/user/project
 ### Option 1 — Go install (recommended)
 
 ```bash
-go install github.com/devsetup/devsetup@latest
+go install github.com/MUSTHAFA786G/devsetup@latest
 ```
 
 ### Option 2 — Homebrew (macOS / Linux)
@@ -63,7 +63,7 @@ brew install devsetup/tap/devsetup
 ### Option 3 — Pre-built binary
 
 Download the binary for your platform from the
-[Releases page](https://github.com/devsetup/devsetup/releases):
+[Releases page](https://github.com/MUSTHAFA786G/devsetup/releases):
 
 | Platform | File |
 |---|---|
@@ -85,7 +85,7 @@ sudo mv devsetup /usr/local/bin/
 **Prerequisites:** Go 1.21+, Git
 
 ```bash
-git clone https://github.com/devsetup/devsetup.git
+git clone https://github.com/MUSTHAFA786G/devsetup.git
 cd devsetup
 go build -o devsetup .
 sudo mv devsetup /usr/local/bin/   # optional: add to PATH
@@ -357,7 +357,7 @@ make test-cover    # tests + HTML coverage report
 
 ### Reporting bugs
 
-Please open a [GitHub Issue](https://github.com/devsetup/devsetup/issues) with:
+Please open a [GitHub Issue](https://github.com/MUSTHAFA786G/devsetup/issues) with:
 - `devsetup version` output
 - OS and architecture
 - The command you ran

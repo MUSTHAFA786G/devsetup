@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/devsetup/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
 )
 
 // StackType is the name of a detected technology stack.

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/devsetup/devsetup/internal/detector"
-	"github.com/devsetup/devsetup/internal/logger"
+	"github.com/MUSTHAFA786G/devsetup/internal/detector"
+	"github.com/MUSTHAFA786G/devsetup/internal/logger"
 )
 
 // Runner launches the dev server for a project.
