@@ -3,6 +3,7 @@
 > **One command. Any GitHub repo. Running in minutes.**
 
 [![CI](https://github.com/MUSTHAFA786G/devsetup/actions/workflows/ci.yml/badge.svg)](https://github.com/MUSTHAFA786G/devsetup/actions/workflows/ci.yml)
+[![Security Policy](https://img.shields.io/badge/security-policy-blue.svg)](https://github.com/MUSTHAFA786G/devsetup/blob/main/.github/SECURITY.md)
 [![Go Report Card](https://goreportcard.com/badge/github.com/MUSTHAFA786G/devsetup)](https://goreportcard.com/report/github.com/MUSTHAFA786G/devsetup)
 [![Release](https://img.shields.io/github/v/release/devsetup/devsetup)](https://github.com/MUSTHAFA786G/devsetup/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
